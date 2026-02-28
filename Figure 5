@@ -93,7 +93,7 @@ load("All_fb.Rdata")
 
 #Figure 5C
 {
-  load("scRNA_CW_sample_data.Rdata")
+  count_mtx <- readRDS("scRNA_CW_sample_data.rds")
 
   melt_mtx<-melt(count_mtx)
   melt_mtx$cluster<-as.factor(melt_mtx$cluster)
